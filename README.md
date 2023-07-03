@@ -36,7 +36,7 @@
 - Make simple calculations.
 - Read a random math-related quote.
 
-   (For now its just the setup)
+   (For now its just the design)
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -125,7 +125,7 @@ Double click on the HTML file, open it in your browser.
 ### Run tests
 
 To run tests, run the following command:
-
+Create an operational Calculator.
 
 ```
 no test
@@ -163,7 +163,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Create a Calculator
+- Create an operational Calculator.
 - Connect to an API 
 - Create Home and Quote sections.
 

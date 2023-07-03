@@ -21,6 +21,7 @@ const allBtn = [
   '.',
   '=',
 ];
+
 function Display() {
   return <div className="display">0</div>;
 }
