@@ -38,6 +38,8 @@ function Calculator() {
     let btnClass = 'btn';
     if (name === '÷' || name === 'x' || name === '-' || name === '+' || name === '=') {
       btnClass = 'btn orange';
+    } else if (name === 0) {
+      btnClass = 'btn zero';
     }
     return btnClass;
   };
