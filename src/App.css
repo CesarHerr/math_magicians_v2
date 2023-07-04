@@ -1,5 +1,6 @@
 .calculatorContainer {
-  width: 40em;
+  width: 60%;
+  max-width: 750px;
   min-width: 300px;
   margin-top: 4rem;
 }
@@ -48,8 +49,7 @@ body, main {
 }
 
 .quote {  
-  display: inline;
   font-size: 1.5rem;
-  width: 80%; 
-  min-width: 350px;
+  width: 80vw; 
+  min-width: 350px;  
 }
