@@ -5,10 +5,11 @@
   margin-top: 4rem;
 }
 
-body, main {
+body,
+main {
   display: grid;
   place-items: center;
-  gap:20px;
+  gap: 20px;
 }
 
 .display {
@@ -48,8 +49,8 @@ body, main {
   background-color: #c1c4c4;
 }
 
-.quote {  
+.quote {
   font-size: 1.5rem;
-  width: 80vw; 
-  min-width: 350px;  
+  width: 80vw;
+  min-width: 350px;
 }
