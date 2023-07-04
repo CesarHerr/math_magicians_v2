@@ -4,9 +4,10 @@
   margin-top: 4rem;
 }
 
-body {
+body, main {
   display: grid;
   place-items: center;
+  gap:20px;
 }
 
 .display {
@@ -44,4 +45,11 @@ body {
 
 .btn:active {
   background-color: #c1c4c4;
+}
+
+.quote {  
+  display: inline;
+  font-size: 1.5rem;
+  width: 80%; 
+  min-width: 350px;
 }
