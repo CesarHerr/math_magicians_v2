@@ -61,7 +61,7 @@ function Calculator() {
 
   return (
     <section className="calculatorContainer">
-      <Display result={print.total || print.next || 0} />
+      <Display result={print.next || print.total || 0} />
       <div className="buttons">
         {allBtn.map((name) => (
           <Buttons
