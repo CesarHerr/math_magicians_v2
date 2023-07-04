@@ -7,19 +7,19 @@ const allBtn = [
   '+/-',
   '%',
   '÷',
-  7,
-  8,
-  9,
+  '7',
+  '8',
+  '9',
   'x',
-  4,
-  5,
-  6,
+  '4',
+  '5',
+  '6',
   '-',
-  1,
-  2,
-  3,
+  '1',
+  '2',
+  '3',
   '+',
-  0,
+  '0',
   '.',
   '=',
 ];
@@ -28,12 +28,12 @@ function Display({ result }) {
   return <div className="display">{result}</div>;
 }
 
-function Buttons({ name, buttonsClasses, setCalculate }) {
+function Buttons({ name, buttonsClasses, onClick }) {
   return (
     <button
       className={buttonsClasses(name)}
       type="button"
-      onClick={setCalculate(name)}
+      onClick={() => onClick(name)}
     >
       {name}
     </button>
@@ -41,29 +41,27 @@ function Buttons({ name, buttonsClasses, setCalculate }) {
 }
 
 function Calculator() {
-  const [result, setResult] = useState(0);
+  const [print, setPrint] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
   const buttonsClasses = (name) => {
     let btnClass = 'btn';
     if (name === '÷' || name === 'x' || name === '-' || name === '+' || name === '=') {
       btnClass = 'btn orange';
-    } else if (name === 0) {
+    } else if (name === '0') {
       btnClass = 'btn zero';
     }
     return btnClass;
   };
 
-  const setCalculate = (name) => {
-    const obj = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    useState(calculate(obj, name));
-  };
+  const setCalculate = (name) => setPrint(calculate(print, name));
 
   return (
     <section className="calculatorContainer">
-      <Display result={setResult} />
+      <Display result={print.total || print.next || 0} />
       <div className="buttons">
         {allBtn.map((name) => (
           <Buttons
@@ -79,13 +77,13 @@ function Calculator() {
 }
 
 Buttons.propTypes = {
-  name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  name: PropTypes.PropTypes.string.isRequired,
   buttonsClasses: PropTypes.func.isRequired,
-  setCalculate: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
 };
 
 Display.propTypes = {
-  result: PropTypes.func.isRequired,
+  result: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
 };
 
 export default Calculator;
