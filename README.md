@@ -34,7 +34,7 @@
 
 **[Math Magician]** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 - Make simple calculations.
-
+- See a list of quotes. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,6 +65,17 @@
 ```
 - Understand how to use medium-fidelity wireframes to create a UI.
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- https://cesarherr.github.io/math_magicians_v2/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +171,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Connect to an API 
 - Create Home and Quote sections.
 
 

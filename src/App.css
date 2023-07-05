@@ -1,12 +1,15 @@
 .calculatorContainer {
-  width: 40em;
+  width: 60%;
+  max-width: 750px;
   min-width: 300px;
   margin-top: 4rem;
 }
 
-body {
+body,
+main {
   display: grid;
   place-items: center;
+  gap: 20px;
 }
 
 .display {
@@ -44,4 +47,10 @@ body {
 
 .btn:active {
   background-color: #c1c4c4;
+}
+
+.quote {
+  font-size: 1.5rem;
+  width: 80vw;
+  min-width: 350px;
 }
