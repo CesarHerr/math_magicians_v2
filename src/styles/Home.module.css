@@ -1,0 +1,8 @@
+.homeContainer h3 {
+font-size: 2rem;
+}
+
+.homeContainer p {
+  font-size: 1.5rem;
+  width: 80%;  
+}
