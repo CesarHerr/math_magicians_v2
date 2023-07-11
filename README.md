@@ -34,7 +34,7 @@
 
 **[Math Magician]** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 - Make simple calculations.
-- See a list of quotes. 
+- See some quotes. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -171,7 +171,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Create Home and Quote sections.
+- Improve responsive Design.
+- Add an Hamburger button. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

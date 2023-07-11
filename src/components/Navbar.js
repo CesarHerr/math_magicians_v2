@@ -10,10 +10,10 @@ function Navbar() {
           <Link to="math_magicians_v2">Home</Link>
         </li>
         <li>
-          <Link to="quotes/3">Quotes</Link>
+          <Link to="calculator">Calculator</Link>
         </li>
         <li>
-          <Link to="calculator">Calculator</Link>
+          <Link to="quotes/3">Quotes</Link>
         </li>
       </ul>
     </nav>
