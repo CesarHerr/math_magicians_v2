@@ -4,6 +4,7 @@ import './App.css';
 import Quotes from './components/Quote';
 import Root from './routes/root';
 import ErrorPage from './routes/error-page';
+import Home from './components/Home';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'calculator/',
         element: <Calculator />,
+      },
+      {
+        path: '/',
+        element: <Home />,
       },
     ],
   },

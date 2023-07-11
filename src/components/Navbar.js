@@ -5,6 +5,9 @@ function Navbar() {
     <nav>
       <ul>
         <li>
+          <Link to="./">Home</Link>
+        </li>
+        <li>
           <Link to="quotes/1">Quotes</Link>
         </li>
         <li>
