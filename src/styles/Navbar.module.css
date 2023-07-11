@@ -18,7 +18,7 @@
 }
 
 .list li {
-  border-right: 2px solid black;
+  border-right: 2px solid #fff;
   padding: 2.5rem;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .list a:visited {  
-  color: black
+  color: #fff
 }
 
 .list a:active {
