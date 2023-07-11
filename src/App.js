@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <Calculator />,
       },
       {
-        path: '/',
+        path: 'math_magicians_v2/',
         element: <Home />,
       },
     ],

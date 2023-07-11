@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar h1 {
+  margin-left: 0.5em;
+  font-size: 3rem;
+}
+
+.list {
+  width: 40%;
+  min-width: 450px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;  
+}
+
+.list li {
+  border-right: 2px solid black;
+  padding: 2.5rem;
+}
+
+.list li:last-child {
+  border: none;
+}
+
+.list a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.list a:visited {  
+  color: black
+}
+
+.list a:active {
+  text-decoration: none;
+  color: blueviolet;
+}

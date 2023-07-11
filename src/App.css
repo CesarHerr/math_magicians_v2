@@ -10,6 +10,7 @@ main {
   display: grid;
   place-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .display {
