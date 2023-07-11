@@ -30,13 +30,12 @@
 .list a {
   text-decoration: none;
   font-size: 1.5rem;
-}
-
-.list a:visited {
   color: #fff;
 }
 
-.list a:active {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
-  color: blueviolet;
+  color: #fff;
 }
