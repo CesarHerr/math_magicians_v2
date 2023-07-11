@@ -1,15 +1,21 @@
+.calculatorSection {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.calculatorSection h2 {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
 .calculatorContainer {
   width: 60%;
   max-width: 750px;
   min-width: 300px;
   margin-top: 4rem;
-}
-
-body,
-main {
-  display: grid;
-  place-items: center;
-  gap: 20px;
+  background-color: rgba(112, 63, 63, 0.527);
+  border-radius: 0.4rem;
 }
 
 .display {
@@ -22,6 +28,7 @@ main {
   background-color: #848793;
   color: #fff;
   font-size: 3rem;
+  border-radius: 0.4rem;
 }
 
 .buttons {
@@ -29,28 +36,25 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.btn {
+.btn,
+.btnOrange,
+.btnZero {
   font-weight: bolder;
   height: 100px;
   background-color: #e0e1e1;
   border: 1px solid rgb(208, 209, 208);
   cursor: pointer;
+  border-radius: 0.4rem;
 }
 
-.orange {
+.btnOrange {
   background-color: #f5903f;
 }
 
-.zero {
+.btnZero {
   grid-area: 5 / 1 / 5 / 3;
 }
 
-.btn:active {
+.buttons button:active {
   background-color: #c1c4c4;
-}
-
-.quote {
-  font-size: 1.5rem;
-  width: 80vw;
-  min-width: 350px;
 }

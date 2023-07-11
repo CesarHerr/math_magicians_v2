@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import styles from '../styles/Calculator.module.css';
 
 const allBtn = [
   'AC',
@@ -25,13 +26,13 @@ const allBtn = [
 ];
 
 function Display({ result }) {
-  return <div className="display">{result}</div>;
+  return <div className={styles.display}>{result}</div>;
 }
 
 function Buttons({ name, buttonsClasses, onClick }) {
   return (
     <button
-      className={buttonsClasses(name)}
+      className={styles[buttonsClasses(name)]}
       type="button"
       onClick={() => onClick(name)}
     >
@@ -50,9 +51,9 @@ function Calculator() {
   const buttonsClasses = (name) => {
     let btnClass = 'btn';
     if (name === '÷' || name === 'x' || name === '-' || name === '+' || name === '=') {
-      btnClass = 'btn orange';
+      btnClass = 'btnOrange';
     } else if (name === '0') {
-      btnClass = 'btn zero';
+      btnClass = 'btnZero';
     }
     return btnClass;
   };
@@ -60,19 +61,22 @@ function Calculator() {
   const setCalculate = (name) => setPrint(calculate(print, name));
 
   return (
-    <section className="calculatorContainer">
-      <Display result={print.next || print.total || 0} />
-      <div className="buttons">
-        {allBtn.map((name) => (
-          <Buttons
-            key={name}
-            name={name}
-            buttonsClasses={buttonsClasses}
-            onClick={setCalculate}
-          />
-        ))}
-      </div>
-    </section>
+    <div className={styles.calculatorSection}>
+      <h2>Lets do some Maths!</h2>
+      <section className={styles.calculatorContainer}>
+        <Display result={print.next || print.total || 0} />
+        <div className={styles.buttons}>
+          {allBtn.map((name) => (
+            <Buttons
+              key={name}
+              name={name}
+              buttonsClasses={buttonsClasses}
+              onClick={setCalculate}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 
