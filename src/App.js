@@ -1,14 +1,28 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import './App.css';
 import Quotes from './components/Quote';
+import Root from './routes/root';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        path: 'quotes/:quoteId',
+        element: <Quotes />,
+      },
+      {
+        path: 'calculator/',
+        element: <Calculator />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <Calculator />
-      <Quotes />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
