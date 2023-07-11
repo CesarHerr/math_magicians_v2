@@ -33,13 +33,12 @@
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn,
 .btnOrange,
-.btnZero
-{
+.btnZero {
   font-weight: bolder;
   height: 100px;
   background-color: #e0e1e1;

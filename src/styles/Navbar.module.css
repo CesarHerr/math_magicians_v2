@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .navbar h1 {
   margin-left: 0.5em;
   font-size: 3rem;
@@ -13,8 +14,8 @@
   min-width: 450px;
   list-style: none;
   display: flex;
-  justify-content: space-around;  
-  align-items: center;  
+  justify-content: space-around;
+  align-items: center;
 }
 
 .list li {
@@ -31,8 +32,8 @@
   font-size: 1.5rem;
 }
 
-.list a:visited {  
-  color: #fff
+.list a:visited {
+  color: #fff;
 }
 
 .list a:active {
