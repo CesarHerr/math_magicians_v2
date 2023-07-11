@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import styles from '../styles/Quotes.module.css';
 
 function Quotes() {
   const [data, setData] = useState([]);
@@ -28,16 +29,41 @@ function Quotes() {
       setIsLoading(false);
     };
     fetchData();
-  }, [setData, setIsLoading]);
+  }, []);
 
   if (hasError) return hasError || <div>Something went wrong!</div>;
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className={styles.loading}>
+        <div className={styles.loading__roller}>
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <div>Loading</div>
+      </div>
+    );
+  }
+
+  const quoteStyle = {
+    marginTop: '5rem',
+    fontSize: '2rem',
+    width: '80vw',
+    minWidth: '350px',
+  };
 
   return (
-    <div>
-      <p className="quote">{data.quote}</p>
-      <strong><p>{data.author}</p></strong>
+    <div style={quoteStyle}>
+      <p>{data.quote}</p>
+      <strong>
+        <p>{data.author}</p>
+      </strong>
     </div>
   );
 }

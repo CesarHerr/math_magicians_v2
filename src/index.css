@@ -27,3 +27,11 @@ code {
     'Courier New',
     monospace;
 }
+
+body,
+main {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  width: 100%;
+}

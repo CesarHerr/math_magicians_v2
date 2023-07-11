@@ -5,14 +5,6 @@
   margin-top: 4rem;
 }
 
-body,
-main {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-  width: 100%;
-}
-
 .display {
   height: 100px;
   padding-right: 5px;
@@ -48,10 +40,4 @@ main {
 
 .btn:active {
   background-color: #c1c4c4;
-}
-
-.quote {
-  font-size: 1.5rem;
-  width: 80vw;
-  min-width: 350px;
 }
