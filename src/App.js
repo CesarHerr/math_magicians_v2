@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import './App.css';
 import Quotes from './components/Quote';
 import Root from './routes/root';
 import ErrorPage from './routes/error-page';
